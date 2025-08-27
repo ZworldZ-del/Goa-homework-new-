@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Warning You Have Been Hacked</title>
+
+ 
+  <link rel="stylesheet" href="style.css">
+  <link rel="noopener" href="hello.sh">
+  <link rel="noopener" href="gameon.pgsql">
+  <link rel="noopener" href="page.cpp">
+<link rel="noopener" href="server.py">
+ 
+  <link rel="icon" href="https://static.vecteezy.com/system/resources/thumbnails/012/042/292/small_2x/warning-sign-icon-transparent-background-free-png.png">
+</head>
+<body>
+
+  <div id="messages"></div>
+
+ 
+  <script>
+    const messages = document.getElementById("messages");
+
+    function printMessage(type, text) {
+      const p = document.createElement("p");
+      p.textContent = text;
+      p.className = type;
+      messages.appendChild(p);
+    }
+
+    console.log("---------");
+    printMessage("log", "---------");
+
+    console.error("------------");
+    printMessage("error", "------------");
+
+    console.warn("U HAVE BEEN WARNED");
+    printMessage("warn", "U HAVE BEEN WARNED");
+
+    window.addEventListener("customEvent", () => {
+      console.error("U GOT HACKED");
+      printMessage("error", "U GOT HACKED");
+    });
+
+    const event = new Event("customEvent");
+    window.dispatchEvent(event);
+
+    localStorage.setItem("test", "123");
+    printMessage("log", "Before clear: " + localStorage.getItem("test"));
+    localStorage.clear();
+    printMessage("log", "After clear: " + localStorage.getItem("test"));
+
+    alert("U HAVE BEEN HACKED");
+    printMessage("alert", "U HAVE BEEN HACKED");
+
+    console.error("Final error log");
+    printMessage("error", "Final error log");
+  </script>
+
+</body>
+</html>

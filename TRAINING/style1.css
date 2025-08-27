@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: "Consolas", monospace;
+  background: #0d0d0d;
+  color: #e0e0e0;
+}
+
+#messages {
+  max-width: 800px;
+  margin: auto;
+}
+
+p.log {
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff;
+}
+
+p.warn {
+  color: #ffcc00;
+  text-shadow: 0 0 5px #ffcc00;
+}
+
+p.error {
+  color: #ff0055;
+  text-shadow: 0 0 10px #ff0055;
+  font-weight: bold;
+}
+
+p.alert {
+  color: #ffffff;
+  background: #ff0055;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  text-shadow: 0 0 5px #fff;
+  animation: flicker 1.5s infinite;
+}
+
+
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+p.debug {
+  color: #888888;
+  font-style: italic;
+}
