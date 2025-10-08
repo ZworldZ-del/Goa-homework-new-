@@ -1,0 +1,40 @@
+/* restart css */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.h1-1{
+    color: green;
+}
+
+body{
+    background-color: black;
+}
+
+.p-1{
+    color:green
+}
+
+.margin-container{
+margin-top: 20px;
+margin-left: 20px;
+margin-right: 20px;
+margin-bottom: 20px;
+}
+
+.padding-container{
+padding-top: 20px;
+padding-left: 20px;
+padding-right: 20px;
+padding-bottom: 20px;
+}
+
+.border-container {
+    border-top: 10px;
+    border-right: 20px;
+    border-bottom: 30px;
+    border-left: 40px;
+}
