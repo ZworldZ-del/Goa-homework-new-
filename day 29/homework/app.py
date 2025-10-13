@@ -25,7 +25,6 @@ print(lion())
 
 # ---------------------------------
 
-
 def lion4():
     numbers = []
     for i in range(22):  
