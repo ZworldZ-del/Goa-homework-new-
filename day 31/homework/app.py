@@ -5,6 +5,7 @@ def check_even_or_odd():
     else:
         print("რიცხვი კენტია")
 
+
 def check_positive_or_negative():
     number = int(input("შეიყვანე რიცხვი: "))
     if number > 0:
@@ -13,6 +14,7 @@ def check_positive_or_negative():
         print("რიცხვი უარყოფითია")
     else:
         print("რიცხვი ნულია")
+
 
 def compare_numbers():
     a = int(input("შეიყვანე პირველი რიცხვი: "))
@@ -23,6 +25,7 @@ def compare_numbers():
         print(f"{b} უფრო დიდია ვიდრე {a}")
     else:
         print("ორივე რიცხვი ტოლია")
+
 
 def grade_student():
     score = int(input("შეიყვანე სტუდენტის ქულა (0-100): "))
@@ -39,6 +42,7 @@ def grade_student():
     else:
         print("არასწორი ქულა! უნდა იყოს 0-დან 100-მდე.")
 
+
 def check_temperature():
     temp = float(input("შეიყვანე ტემპერატურა ცელსიუსში: "))
     if temp < 0:
@@ -47,6 +51,7 @@ def check_temperature():
         print("Today is a really nice weather")
     else:
         print("Today is very hot! Drink plenty of water")
+
 
 check_even_or_odd()
 check_positive_or_negative()
