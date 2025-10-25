@@ -1,0 +1,28 @@
+/* resert css */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    color: rgb(219, 57, 57);
+    text-shadow: 0px 0px 20px rgb(219, 57, 57);
+}
+
+p{
+    color: rgb(255, 137, 40);
+    text-shadow: 0px 0px 20px rgb(255, 137, 40);
+}
+
+
+.bg-liner{
+    height: 100vh;
+    width: 100%;
+     background-image: 
+       linear-gradient(rgba(9, 12, 158, 0.527) , rgba(255, 255, 255, 0.082)) ,
+       linear-gradient(rgba(12, 12, 12, 0.199) , rgba(153, 153, 153, 0.11)) , 
+    url(https://i.pinimg.com/originals/02/3d/81/023d81bed1aada861567d2e68b1cfdb8.jpg) ;
+}
+
