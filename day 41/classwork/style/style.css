@@ -1,0 +1,60 @@
+/* restart css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.div-1{
+background-image: linear-gradient(red , blue);
+width: 500px;
+display: flex;
+}
+
+.div-2{
+background-image: linear-gradient(rgb(255, 255, 255) , blue);
+width: 50%;
+display: flex;
+}
+
+.div-3{
+background-image: linear-gradient(rgb(255, 0, 0) , blue);
+width: 100vw , 50vh;
+display: flex;
+}
+
+.div-4{
+background-image: linear-gradient(rgb(49, 49, 49) , rgb(0, 0, 32));
+width: 2rem;
+display: flex;
+}
+
+.div-5{
+background-image: linear-gradient(rgb(255, 0, 0) , rgb(245, 245, 245));
+width: 50px;
+display: flex;
+}
+
+.div-33{
+    display: flex;
+}
+
+.div-6{
+    display: flex;
+    width: 500px;
+    height: 500px;
+    border: solid 5px;
+    max-width: 500px;
+    margin: auto;
+    background-color: blue;
+}
+
+.div-7{
+    display: flex;
+    width: 500px;
+    height: 500px;
+    border: solid 5px;
+    max-width: 500px;
+    margin: auto;
+    background-color: blue;
+}
