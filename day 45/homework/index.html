@@ -8,26 +8,75 @@
 </head>
 <body>
 <body>
-    <div class="center-boxes">
-        <div class="b1"></div>
-        <div class="b2"></div>
-        <div class="b3"></div>
-        <div class="b4"></div>
-    </div>
 
 
-    <div class="right-corner">
-        <div class="b1"></div>
-        <div class="b2"></div>
-        <div class="b3"></div>
-        <div class="b4"></div>
-    </div>
+<!-- 
+ID — გამოიყენება უნიკალური ელემენტებისთვის. 
+ID უნდა განმეორდეს გვერდზე მხოლოდ ერთჯერ (ერთი უნიკალური ელემენტი). 
+გამოიყენება კონკრეტულ ელემენტზე ზუსტი წვდომისთვის (JS-შიც).
 
-  
-    <div class="two-vertical">
-        <div></div>
-        <div></div>
-    </div>
+Class — გამოიყენება ერთნაირი სტილის მქონე ბევრ ელემენტზე. 
+კლასს შეუძლია ჰქონდეს მრავალი ელემენტი. 
+გამოიყენება სტილების ჯგუფებისთვის, დიზაინის ერთგვაროვნებისთვის.
+-->
+
+<div id="container"></div>
+
+<style>
+    #container {
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+    }
+</style>
+
+
+<div class="wrapper">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</div>
+
+<style>
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+        height: 100vh;
+        gap: 50px; 
+    }
+
+    .box {
+        width: 100px;
+        height: 100px;
+        background: red;
+    }
+</style>
+<div class="bottom-parent">
+    <div class="child-box"></div>
+    <div class="child-box"></div>
+    <div class="child-box"></div>
+    <div class="child-box"></div>
+    <div class="child-box"></div>
+</div>
+
+<style>
+    .bottom-parent {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end; 
+        height: 100vh; 
+        gap: 20px;
+    }
+
+    .child-box {
+        width: 80px;
+        height: 80px;
+        background: green;
+    }
+</style>
+
 
 </body>
 </html>
