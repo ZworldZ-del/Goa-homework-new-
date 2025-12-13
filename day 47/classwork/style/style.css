@@ -4,3 +4,22 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body{
+    background-color: rgb(153, 93, 181);
+}
+
+.parentdiv{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    height: 100vh;
+}
+
+.blackbox{
+    border-radius: 10px;
+    border: solid black;
+    background-color: rgb(247, 148, 31);
+    width: 100px;
+    height: 100px;
+}
