@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    
+    <div class="horizontal-center">
+  <div class="block">1</div>
+  <div class="block">2</div>
+  <div class="block">3</div>
+</div>
+
+<style>
+
+.horizontal-center {
+  display: flex;
+  justify-content: center; 
+  gap: 20px; 
+}
+
+.block {
+  width: 100px;
+  height: 100px;
+  background-color: teal;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+</style>
+
+<div class="vertical-center">
+  <div class="block">1</div>
+  <div class="block">2</div>
+  <div class="block">3</div>
+</div>
+
+<style>
+.vertical-center {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  gap: 20px;
+}
+
+.block {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+</style>
+
+<div class="five-blocks">
+  <div class="block">1</div>
+  <div class="block">2</div>
+  <div class="block">3</div>
+  <div class="block">4</div>
+  <div class="block">5</div>
+</div>
+
+<style>
+.five-blocks {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.block {
+  width: 100px;
+  height: 100px;
+  background-color: purple;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+</style>
+
+
+
+</body>
+</html>
