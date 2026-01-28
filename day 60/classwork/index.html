@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TATATA SAHUR</title>
+</head>
+<body>
+    <style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+  background: rgb(49, 49, 49);
+  padding: 40px;
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+  height: 520px;
+}
+
+.box1 {
+  background: cyan;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 1;
+}
+
+.box2 {
+  background: magenta;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row: 1 / 3;
+}
+
+.box3 {
+  background: yellow;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 2;
+}
+
+.box4 {
+  background: lime;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row: 3;
+}
+
+.box5 {
+  background: orange;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row: 3;
+}
+
+</style>
+
+<div class="boxes">
+  <div class="box box1"></div>
+  <div class="box box2"></div>
+  <div class="box box3"></div>
+  <div class="box box4"></div>
+  <div class="box box5"></div>
+</div>
+
+</body>
+</html>
