@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GRUDURI MAMAKACI</title>
+    <style>
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1a1a1a;
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(1/2fr);
+    grid-template-rows: repeat(1/2fr);
+    gap: 15px;
+    height: 600px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+    border-radius: 8px;
+}
+
+
+.header {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    background: #09ff00;
+}
+
+.sidebar {
+    grid-column: 1;
+    grid-row: 2 / 4;
+    background: #00ff0d;
+}
+
+.content1 {
+    grid-column: 2 / 4;
+    grid-row: 2;
+    background: #2fff00;
+}
+
+.content2 {
+    grid-column: 2 / 3;
+    grid-row: 3;
+    background: #0dff00;
+}
+
+.content3 {
+    grid-column: 3;
+    grid-row: 3;
+    background: #00ff0d;
+}
+
+.footer {
+    grid-column: 1 / 4;
+    grid-row: 4;
+    background: #48ff00;
+}
+
+</style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="header">1</div>
+        <div class="sidebar">2</div>
+        <div class="content1">3</div>
+        <div class="content2">4</div>
+        <div class="content3">5</div>
+        <div class="footer">6</div>
+    </div>
+</body>
+</html>
+
+    </body>
+</html>
